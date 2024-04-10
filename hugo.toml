@@ -1,3 +1,86 @@
-baseURL = 'https://example.org/'
-languageCode = 'en-us'
-title = 'My New Hugo Site'
+baseURL = "https://blog.david-white.dev"
+languageCode = "en-us"
+title = "Developer Blog"
+theme = "binario"
+
+[services.disqus]
+  shortname = "quest-engine-com" # Enable Disqus by entering your Disqus shortname
+[services.googleAnalytics]
+  ID = "" # Enable Google Analytics by entering your tracking ID
+
+[Author] # Used in authorbox
+  name = "David White"
+  bio = "David White is a Colorado-based full-stack web wizard who loves crafting interactive digital experiences. Driven by a passion for elegant code and intuitive user experiences, David thrives in collaborative environments and excels at translating complex problems into clean, efficient solutions. With expertise spanning JavaScript frameworks, UI/UX design, and cloud architecture, David brings a versatile skillset to every project. When not immersed in code, you can find David building something out of wood, playing video games, or even doing something outdoors occasionally."
+  avatar = "images/headshot.jpg"
+
+[Params]
+  description = "Responsive card-based & code-light Hugo theme" # Site Description. Used in meta description
+  copyright = "David White" # Copyright holder, otherwise will use .Site.Title
+  opengraph = true # Enable OpenGraph if true
+  schema = true # Enable Schema
+  twitter_cards = true # Enable Twitter Cards if true
+  columns = 2 # Set the number of cards columns. Possible values: 1, 2, 3
+  mainSections = ["posts"] # Set main page sections
+  dateFormat = "January 02, 2006" # Change the format of dates
+  colorTheme = "dark-green" # dark-green, dark-blue, dark-red, dark-violet
+  customCSS = ["css/custom.css"] # Include custom CSS files
+  customJS = ["js/custom.js"] # Include custom JS files
+  mainMenuAlignment = "right" # Align main menu (desktop version) to the right side
+  authorbox = true # Show authorbox at bottom of single pages if true
+  comments = true # Enable comments for all site pages
+  related = true # Enable Related content for single pages
+  relatedMax = 5 # Set the maximum number of elements that can be displayed in related block. Optional
+  mathjax = true # Enable MathJax for all site pages
+  mathjaxPath = "https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js" # Specify MathJax path. Optional
+  mathjaxConfig = "TeX-AMS-MML_HTMLorMML" # Specify MathJax config. Optional
+  hideNoPostsWarning = false # Don't show no posts empty state warning in main page, if true
+
+[Params.Entry]
+  meta = ["date", "categories", "tags"] # Enable meta fields in given order
+  toc = true # Enable Table of Contents
+  tocOpen = true # Open Table of Contents block. Optional
+
+[Params.Featured]
+  previewOnly = false # Show only preview featured image
+
+[Params.Breadcrumb]
+  enable = true # Enable breadcrumb block globally
+  homeText = "Home" # Home node text
+
+[Params.Social]
+  email = "david@david-white.dev"
+  linkedin = "david-white-9b0153144"
+  github = "dwight9339"
+  medium = "david-r-white"
+
+[Params.Share] # Entry Share block
+  twitter = true
+  reddit = true
+  telegram = true
+  linkedin = true
+  vk = true
+  pocket = true
+
+# # Web App Manifest settings
+# # https://www.w3.org/TR/appmanifest/
+# # https://developers.google.com/web/fundamentals/web-app-manifest/
+# [Params.Manifest]
+#   name = "Binario"
+#   shortName = "Binario"
+#   display = "browser"
+#   startUrl = "/"
+#   backgroundColor = "#2a2a2a"
+#   themeColor = "#110219"
+#   description = "Responsive card-based & code-light Hugo theme"
+#   orientation = "portrait"
+#   scope = "/"
+
+# [outputFormats]
+#   [outputFormats.MANIFEST]
+#     mediaType = "application/json"
+#     baseName = "manifest"
+#     isPlainText = true
+#     notAlternative = true
+
+# [outputs]
+#   home = ["HTML", "RSS", "MANIFEST"]
