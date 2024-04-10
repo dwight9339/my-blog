@@ -1,6 +1,6 @@
 +++
 title = "Creating a Blog with Hugo and a General Guide to Static Site Generation"
-date = 2024-04-05T13:45:00-06:00
+date = 2024-04-10
 draft = false
 tags = ["Web Development", "Hugo"]
 author = "David White"
